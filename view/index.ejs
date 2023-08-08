@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
+    <title>Apexel Development</title>
+</head>
+
+<body>
+    <nav class="navbar">
+
+        <div class="container">
+            <h1 class="logo">Apexel Dev</h1>
+            <ul class="nav">
+                <li><a href="/">HOME</a></li>
+                <li><a href="/services">SERVICES</a></li>
+                <li><a href="/about-us">ABOUT</a></li>
+                <li><a href="/contact">CONTACT</a></li>
+            </ul>
+            <div class="login-profile">
+                <% if (user && user.name) { %>
+                    <form action="/logout?_method=DELETE" method="post">
+                        <button type="submit">Logout</button>
+                    </form>
+                <% } else { %>
+                    <form action="/login">
+                        <button name="login" type="submit" id="login"><i class="fa fa-user"> Login</i></button>
+                    </form>
+                <% } %>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Showcase -->
+    <section class="section-a " id="home">
+        <div class="container ">
+            <div>
+                <h1>Apexel Development</h1>
+                <p>Unlock the full potential of your writing career with our expertly crafted website services, tailored to showcase and market your books, driving sales and engaging your audience.</p>
+                <p>Elevate your author brand and expand your literary reach with our personalized website solutions, designed to captivate readers and amplify the success of your books.</p>
+                <a href="/portfolio" class="btn ">The Team</a>
+            </div>
+            <div class="adlogo">
+                <img src="/img/AD.png" alt="Logo">
+            </div>
+        </div>
+    </section>
+
+    <!-- Large Text -->
+    <section id="about " class="section-b ">
+        <div class="overlay ">
+            <div class="section-b-inner py-5 ">
+                <h2 class="text-5 mt-1 ">SERVICES</h2>
+                <p class="mt-1 ">
+                    Discover a tailored suite of services designed for authors, encompassing book promotion, e-commerce functionality to sell your books, and an interactive blog platform to connect with readers and elevate your author profile.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-c ">
+        <div class="services-grid ">
+            <div class="service service1">
+                <i class="ti-bar-chart "></i>
+                <h4>Book Promotion</h4>
+                <p>Create an immersive and comprehensive web page for your book featuring its title, author details, captivating synopsis, stunning book cover, memorable quotes, author's background, and publication information.</p>
+                <a href="/services-1" class="cta1 ">Read More <span class="ti-angle-right "></a>
+            </div>
+
+            <div class="service service2 ">
+                <i class="ti-light-bulb "></i>
+                <h4>E - Commerce Website</h4>
+                Establish your online presence with a fully customizable e-commerce platform, allowing you to sell your books directly to readers, manage orders, and promote your writing career seamlessly.
+                <a href="/services-2" class="cta2 ">Read More <span class="ti-angle-right "></a>
+            </div>
+
+            <div class="service service3 ">
+                <i class="ti-money "></i>
+                <h4>Blog Website</h4>
+                Share your thoughts, connect with your audience, and enhance your author brand through an engaging blog site that showcases your writing journey, updates, and literary insights.
+                <a href="/services-3" class="cta3 ">Read more <span class="ti-angle-right "></span></a>
+            </div>
+        </div>
+    </section>
+    <section class="hero-section" id="portfolio">
+        <div class="card-grid">
+            <a class="card" href="#">
+                <div class="card__background" style="background-image: url(/img/matthew.png)"></div>
+                <div class="card__content">
+                    <p class="card__category">UI / UX Design</p>
+                    <h3 class="card__heading">Israel, Matthew Ethan</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background" style="background-image: url(/img/hiro.jpeg)"></div>
+                <div class="card__content">
+                    <p class="card__category">Front - End Developer</p>
+                    <h3 class="card__heading">Engutan, Hiro</h3>
+                </div>
+            </a>
+            <a class="card" href="#">
+                <div class="card__background" style="background-image: url(/img/stella.jpeg)"></div>
+                <div class="card__content">
+                    <p class="card__category">Front - End Developer</p>
+                    <h3 class="card__heading">Salde, Stella</h3>
+                </div>
+                <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(/img/mallen.jpeg)"></div>
+                    <div class="card__content">
+                        <p class="card__category">Back - End Developer</p>
+                        <h3 class="card__heading">Jugalbot, Mark Allen</h3>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__background" style="background-image: url(/img/ethan.jpg)"></div>
+                    <div class="card__content">
+                        <p class="card__category">Back - End Developer</p>
+                        <h3 class="card__heading">Montera, Ethan</h3>
+                    </div>
+                </a>
+                <div>
+    </section>
+</body>
+
+</html>

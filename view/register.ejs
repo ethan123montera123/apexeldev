@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apexel: Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/register-style.css">
+</head>
+<body>
+    <header>
+        <div class="b1">
+        <div class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Blue_globe_icon.svg/1200px-Blue_globe_icon.svg.png" style="height:30%; width:30%" alt="Globe">
+            <p>APD</p>
+        </div>
+        </div>
+        <div class="b2">
+            <a href="/">HOMEPAGE</a>
+            <a href="/services">SERVICES</a>
+            <a href="/about-us">ABOUT US</a>
+            <a href="/contact">CONTACT US</a>
+        </div>
+        <div class="b3">
+            <% if (user && user.name) { %>
+                <div class="b3-inner2"><i class="fa fa-shopping-basket"></i></div>
+            <% }%>
+            <div class="b3-inner3">
+                <a href="/login"><i class="fa fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+        <div class="bigbox">
+            <div class="upperinner">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Blue_globe_icon.svg/1200px-Blue_globe_icon.svg.png" style="height:5%; width:5%" alt="Globe">
+                <p>APD</p>
+            </div>
+            <div class="centerbox">
+                <h1>Be Part of the Literary Adventure</h1>
+                <p>Sign up for an account</p>
+            </div>
+            <div class="formbox">
+                <form action="/register" method="post">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button name="signup" type="submit"><a>Sign Up</a></button>
+                </form>
+            </div>
+            <div class="back">
+                <a href="/login">Back to log in</a>
+            </div>
+            <% if(messages.error){ %>
+                <strong><%= messages.error%></strong>
+            <% } %>
+            <% if (errorMessage && errorMessage.length > 0) { %>
+                <p><%= errorMessage %></p>
+              <% } %>
+        </div>
+    </body>
+</html>
