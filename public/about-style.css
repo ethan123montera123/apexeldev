@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Catamaran', sans-serif;
+    background-color: #edebeb;
+}
+
+/*--------------header css start---------------*/
+header{
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    padding-top: 10px;
+}
+.b1, .b2, .b3
+{
+    padding: 10px;
+}
+.b1{
+    align-self: center;
+}
+
+.b1 p{
+    display: inline;
+    font-weight: bold;
+}
+.logo{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    width: 30%;
+    border: 1px solid black;
+    padding: 05px;
+    border-radius: 20px;
+}
+.b2{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+}
+.b2 a{
+    display: inline-block;
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.b3{
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+    margin-right: 30px;
+}
+.b3-inner1{
+    display: flex;
+    padding: 5px;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.b3-inner1 i{
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+    margin-left: -30px;
+}
+
+.b3-inner2 i{
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.b3-inner3 i{
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.team{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.team .left-side{
+    display: flex;
+    
+}
