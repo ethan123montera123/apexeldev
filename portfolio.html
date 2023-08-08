@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="portfolio.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navigation begins -->
+    <nav id="navigation-bar" class="navbar navbar-toggleable-sm navbar-inverse transparent fixed-top">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#home"><!-- aria-controls="asd" aria-expanded="false" aria-label="toggle navigation">-->
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a id="my-name" class="navbar-brand" href="#home-page"><strong>Juan Lunar</strong></a>
+        <div id="home" class="collapse navbar-collapse justify-content-end">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#home-page" class="nav-link"><strong>Home</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-page" class="nav-link"><strong>About</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#portfolio-page" class="nav-link"><strong>Portfolio</strong></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact-page" class="nav-link"><strong>Contact</strong></a>
+                </li>
+            </ul>
+        </div>
+        <!-- navbar navbar-collapse -->
+    </nav>
+    <!-- navigation ends -->
+
+    <header>
+        <!-- Home begins-->
+        <div id="home-page" class="container-fluid">
+        </div>
+        <!-- home-page ends -->
+    </header>
+    <!-- about section starts -->
+    <section id="about-page" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1 class="headings">About me</h1>
+                <hr class="section-hr">
+            </div>
+            <!-- About me grid -->
+            <!-- presentation -->
+            <div id="presentation-about-page" class="col-sm-8 text-center">
+                <h3>My Name is <strong>Juan Lunar</strong></h3>
+                <p>I'm a Front-end Web Developer in process from Puerto La Cruz - Venezuela<br>I love creating web apps this is why I started in this path, I'm a self study guy with vision in becoming a Full Stack Web Developer</p>
+                <p>I've been working with technologies such as <strong>HTML, CSS, JAVASCRIPT, BOOTSTRAP and JQUERY</strong></p>
+            </div>
+            <!-- presentation ends -->
+            <!-- picture presentation starts -->
+            <div id="image-presentation-box" class="col-sm-4">
+                <div class="col-md-12 col-sm-12">
+                    <img id="image-presentation" class="img-fluid" src="https://68.media.tumblr.com/be770cca5a5497719d71b649d79c8ff7/tumblr_opdz68x6Js1woo9z4o1_400.jpg" alt="Juan Lunar in El ateneo Buenos Aires - Argentina">
+                </div>
+            </div>
+            <!-- picture presentation ends -->
+        </div>
+        <!-- row ends -->
+    </section>
+    <section id="portfolio-page" class="jumbotron">
+        <!-- Portfolio section begins -->
+
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1 class="headings">Portfolio</h1>
+                <hr class="section-hr">
+            </div>
+
+            <!-- project 1 starts -->
+            <div class="col-md-4 col-sm-6">
+                <a href='https://codepen.io/juanlunar/full/pWyrwL/' target='_blank'>
+                    <figure class="figure">
+                        <div class="img-thumbnail portfolioProjectHover">
+                            <img src="https://68.media.tumblr.com/a0d062119cf73142bfa63e0a681681f3/tumblr_ox7g7iKFjk1woo9z4o1_1280.jpg" class="img-fluid figure-img">
+                            <div class="figure-caption text-center">
+                                <p>Weather App
+                                    <p>
+                            </div>
+                        </div>
+                    </figure>
+                </a>
+            </div>
+            <!-- project 1 ends -->
+
+            <!-- proyect 2 starts -->
+            <div id='randomQuoteMachineContainer' class="col-md-4 col-sm-6">
+                <a href='https://codepen.io/juanlunar/full/NvoXMe/' target='_blank'>
+                    <figure class="figure portfolioProjectHover">
+                        <div class="img-thumbnail portfolioProjectHover">
+                            <img src="https://68.media.tumblr.com/8c12f53f076139e8e008dd7e9cd0085d/tumblr_ox7d6qPrT91woo9z4o1_1280.jpg" class="img-fluid figure-img ">
+                            <div class="figure-caption text-center">
+                                <p>Random Quote Machine
+                                    <p>
+                            </div>
+                        </div>
+                    </figure>
+                </a>
+            </div>
+            <!-- project 2 ends -->
+
+
+
+            <!-- project 3 starts -->
+            <div class="col-md-4 col-sm-6">
+                <figure class="figure">
+                    <div class="img-thumbnail">
+                        <img src="https://68.media.tumblr.com/5d0d342522340e2b3d9ce7b419fb5ace/tumblr_opabhjcQEg1woo9z4o1_1280.jpg" class="img-fluid figure-img">
+                        <div class="figure-caption text-center">
+                            <p>PROJECT #3 COMING SOON
+                                <p>
+                        </div>
+                    </div>
+                </figure>
+            </div>
+            <!-- project 3 ends -->
+        </div>
+        <!-- row ends -->
+    </section>
+    <!-- Portfolio section ends -->
+    <!-- contact section starts -->
+    <section id="contact-page" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h1 class="headings">Contact me</h1>
+                <hr class="section-hr">
+            </div>
+            <!-- heading about section ends -->
+            <!-- contact form starts -->
+            <div id="form-container" class="col-sm-6">
+                <form>
+                    <div class="form-group">
+                        <label for="name-input"><strong>Name</strong></label>
+                        <input id="name-input" class="form-control" type="text" placeholder="First name - Last name">
+                    </div>
+                    <!-- name input ends -->
+                    <div class="form-group">
+                        <label for="company-input"><strong>Company</strong></label>
+                        <input type="text" class="form-control" id="company-input" placeholder="Your Company">
+                    </div>
+                    <!-- Email input starts -->
+                    <div class="form-group">
+                        <label for="email-input"><strong>Email Address</strong></label>
+                        <input id="email-input" class="form-control" type="email" placeholder="example@example.com">
+                    </div>
+                    <!-- Email input ends -->
+                    <!-- Textarea starts -->
+                    <div class="form-group">
+                        <label for="textarea-form"><strong>Message</strong></label>
+                        <textarea type="text" id="textarea-form" class="form-control" rows="6"></textarea>
+                    </div>
+                    <!-- textarea container ends -->
+                    <a href="#home-page"><button type="button" class="btn btn-primary">Submit</button></a>
+                </form>
+                <!-- contact form ends -->
+            </div>
+            <!-- container form ends -->
+            <div id="contact-content-right" class="col-sm-6 text-center">
+                <p>Wanna get in touch with me? feel free to ask me for anything I'm gonna try to help you as much as I can</p>
+                <p>Remember you can find me around the web too</p>
+                <div class="col-sm-12 icon-margin">
+                    <a href="https://www.linkedin.com/in/juan-lunar-26622293/" target="_blank">
+                        <button class="btn btn-primary"><i class="fa fa-linkedin-square"> Linked in</i></button></a>
+                </div>
+                <div class="col-sm-12 icon-margin">
+                    <a href="https://www.freecodecamp.com/juanjlunar" target="_blank">
+                        <button class="btn btn-success"><i class="fa fa-free-code-camp"> Free Code Camp</i></button></a>
+                </div>
+                <div class="col-sm-12 icon-margin">
+                    <a href="https://www.quora.com/profile/Juan-Lunar" target="_blank">
+                        <button class="btn btn-danger"><i class="fa fa-quora"> Quora</i></button></a>
+                </div>
+            </div>
+        </div>
+        <!-- row ends -->
+    </section>
+    <!-- contact section ends -->
+    <footer class="container">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <hr id="footer-hr">
+                <p>Written and coded by <a href="https://codepen.io/juanlunar/pens/public/" target="_blank" class="btn-link">Juan Lunar </a><i class="fa fa-copyright"> Copyright All rights Reserved</i></p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
