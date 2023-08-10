@@ -11,7 +11,7 @@
 
 .contact-form-container {
     background: #F4F3F3;
-    font-family: "Lato", sans-serif;
+    font-family: "Catamaran", sans-serif;
     border-radius: 30px;
 }
 
@@ -61,14 +61,17 @@
 
 .social-bar {
     position: absolute;
-    bottom: 20px;
-    left: 75px;
+    bottom: 30px;
+    left: 30px;
     z-index: 1;
-    width: 100px;
+    width: 100%;
 }
 
 .social-bar ul {
     list-style-type: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
 }
 
 .social-bar ul li {
@@ -183,13 +186,14 @@ form button {
 body {
     background-image: url('https://images.unsplash.com/photo-1519327232521-1ea2c736d34d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFja2dyb3VuZCUyMGJvb2t8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=900&q=60');
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     position: relative;
     background-size: cover;
     background-repeat: no-repeat;
     display: grid;
     justify-items: center;
     align-items: center;
+    grid-template-rows: 0.5fr 2fr 0.5fr;
 }
 
 .contact-form-container {
@@ -222,4 +226,161 @@ body {
 
 .contact-form {
     grid-area: contact-form;
+}
+.fa {
+    padding: 10px;
+    font-size: 10px;
+    width: 40px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+}
+footer{
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    justify-self: center;
+    position: fixed;
+    bottom: 30px;
+    padding-top: 70px;
+}
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+}
+
+@media screen and (max-width: 850px) {
+    .contact-form-container{
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-us{
+        display: none;
+    }
+    .contact-form {
+        width: 100%;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.navbar {
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+.navbar .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.navbar .logo {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.navbar ul {
+    justify-self: flex-end;
+    text-transform: uppercase;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    list-style: none;
+}
+
+.navbar a {
+    padding: 2rem;
+}
+
+.nav ul {
+    list-style: none;
+}
+.burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 10;
+}
+.burger span {
+    width: 2rem;
+    height: 0.25rem;
+    background: black;
+    transition: all 0.3s linear;
+    position: relative;
+    transform-origin: 1px;
+}
+.navbar ul.nav-active{
+    padding: 10px 0px;
+    position: absolute;
+    top: 7rem;
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    background: rgb(98, 98, 98);
+    padding: 10px 0;
+    z-index: 10;
+}
+
+@media screen and (min-width: 850px) {
+    .navbar ul{
+        display: flex;
+        max-height: none;
+        width: 100%;
+        justify-content: center;
+    }
+    .navbar ul li:hover{
+        transition: .5s ease;
+    }
+    .navbar ul li a{
+        color: #333
+    }
+    .burger{
+        display: none;
+    }
+    .navbar a:hover {
+        border-radius: 50px;
+        transition: 0.5s;
+        background-color: black;
+        color: white;
+    }
+}
+@media screen and (max-width: 850px) {
+    .navbar ul{
+        display: none;
+    }
+    .burger {
+        display: flex;
+        justify-self: flex-end;
+        margin: 0 30px;
+    }
+    .navbar ul li {
+        text-align: center;
+    }
+    .navbar ul li a{
+        text-align: center;
+        color: #b8b8b8;
+        padding: 1rem;
+    }
+    .navbar ul li a:hover {
+        transition: 0.5s ease;
+        color: white;
+    }
 }
