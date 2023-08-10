@@ -148,6 +148,9 @@ ul {
         display: flex;
         justify-self: flex-end;
     }
+    .container {
+        padding: 0 1rem;
+    }
 }
 
 .section-a {
