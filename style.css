@@ -336,6 +336,9 @@ ul {
         grid-template-columns: 1fr;
         text-align: center;
     }
+    .section-a .container h1{
+        font-size: 2.5rem;
+    }
     .section-a .container div:first-child {
         order: 2;
     }
