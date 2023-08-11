@@ -6,6 +6,23 @@
     scroll-behavior: smooth;
 }
 
+
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    justify-self: right;
+    justify-content: center;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    margin: 2px 0;
+    background-color: #333;
+}
+
 h1,
 h2,
 h3,
@@ -48,6 +65,21 @@ ul {
     text-transform: uppercase;
 }
 
+.navbar ul.nav-active{
+    padding: 10px 0px;
+    top: 5.5rem;
+    justify-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 15px;
+    background: rgb(98, 98, 98);
+    padding: 5px 0;
+    margin-right: 1rem;
+    max-height: 158px ;
+}
+
 .navbar a {
     padding: 0 1rem;
 }
@@ -57,6 +89,39 @@ ul {
     background-color: black;
     border-radius: 50px;
     transition: 0.5s;
+}
+
+
+@media (max-width: 768px) {
+    .menu-icon {
+        display: flex;
+    }
+    .nav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        padding: 10px;
+        z-index: 1000;
+    }
+    .nav.active {
+        display: flex; 
+    }
+    .nav li {
+        margin: 5px 0;
+    }
+    .nav li a{
+        color: white;
+    }
+    .navbar ul{
+        display: none;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-in-out;
+        
+    }
 }
 
 section.card {
